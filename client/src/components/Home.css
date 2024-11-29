@@ -1,0 +1,58 @@
+/* Center all items in the page with responsiveness */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;
+    box-sizing: border-box;
+  }
+  
+  .primary {
+    color: rgb(0, 0, 0);
+    font-size: 4rem; /* Adjusts size for better responsiveness */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px; /* Adds space between links */
+    text-decoration: none; /* Removes the underline */
+    color: #007bff; /* Sets link color */
+    font-size: 3rem; /* Adjusts link font size for responsiveness */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  nav a:hover {
+    color: #ff4500; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  nav a:active {
+    color: #0056b3; /* Changes color when link is active */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .primary {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    nav a {
+      font-size: 1.2rem; /* Adjust link font size for smaller screens */
+      margin: 0 10px; /* Reduce space between links */
+    }
+  }
+  
+  

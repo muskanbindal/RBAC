@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Styling for the register container */
+.register{
+    /*background: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Heading style */
+h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Form input fields styling */
+input,
+select {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect on input fields */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover effect on the button */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Focus effect on the button */
+button:focus {
+    outline: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    input, select, button {
+        font-size: 1.1rem;
+    }
+
+    div {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
